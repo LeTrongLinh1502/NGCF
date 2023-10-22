@@ -1,8 +1,3 @@
-'''
-Created on March 24, 2020
-
-@author: Tinglin Huang (huangtinglin@outlook.com)
-'''
 
 import torch
 import torch.nn as nn
@@ -10,7 +5,7 @@ import torch.nn.functional as F
 
 
 class NGCF(nn.Module):
-    def __init__(self, n_user, n_item, norm_adj, args):
+    def __init__(self, n_user, n_item, norm_adj, args): # khởi tạo các tham số
         super(NGCF, self).__init__()
         self.n_user = n_user
         self.n_item = n_item
